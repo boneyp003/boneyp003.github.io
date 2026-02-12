@@ -26,12 +26,10 @@ jobs:
         with:
           node-version: 20
           cache: npm
-      
-      - name: Go to Project Directory
-        run: cd mp-portfolio
 
       - name: Install
         run: npm ci
+        working-directory: ./my-portfolio
 
       - name: Build
         run: npm run build
@@ -39,7 +37,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: my-portfolio/dist
 
   deploy:
     needs: build
