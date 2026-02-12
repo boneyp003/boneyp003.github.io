@@ -26,6 +26,9 @@ jobs:
         with:
           node-version: 20
           cache: npm
+      
+      - name: Go to Project Directory
+        run: cd mp-portfolio
 
       - name: Install
         run: npm ci
