@@ -1,8 +1,5 @@
 import styles from './Nav.module.css'
-
 export type PageId = 'home' | 'experience' | 'contact'
-
-type NavItem = { id: PageId; label: string }
 
 type NavProps = {
   active: PageId
