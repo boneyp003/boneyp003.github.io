@@ -1,0 +1,25 @@
+.section {
+  margin-top: 3rem;
+}
+
+.item {
+  margin-top: 1rem;
+}
+
+.headerBtn {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.icon {
+  font-size: 18px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--muted);
+}

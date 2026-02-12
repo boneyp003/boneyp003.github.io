@@ -1,0 +1,38 @@
+.toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 16px;
+  z-index: 1000;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 8px 12px;
+
+  color: var(--text);
+  cursor: pointer;
+}
+
+.toggle:hover {
+  opacity: 0.9;
+}
+
+.icon {
+  font-size: 16px;
+}
+
+.label {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* Optional: hide text on small screens */
+@media (max-width: 520px) {
+  .label {
+    display: none;
+  }
+}

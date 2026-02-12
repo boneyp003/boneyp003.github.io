@@ -1,35 +1,48 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useEffect, useState } from 'react'
+import { applyTheme, getInitialTheme, type Theme } from './theme'
+import Nav, { type PageId } from './components/Nav'
+import { Experience } from './components/Experience'
+import Hero from './components/Hero'
+import ThemeToggle from './components/ThemeToggle'
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  const [theme, setTheme] = useState<Theme>(() => getInitialTheme())
+
+  useEffect(() => {
+    applyTheme(theme)
+  }, [theme])
+
+  const toggleTheme = () => {
+    setTheme((t) => (t === 'dark' ? 'light' : 'dark'))
+  }
+
+  const [page, setPage] = useState<PageId>('home')
+
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
+
+      <Nav active={page} onChange={setPage} />
+      <main style={{ padding: '2.5rem', maxWidth: 980, margin: '0 auto' }}>
+        {page === 'home' && (
+          <section><Hero /></section>
+        )}
+
+        {page === 'experience' && (
+          <section>
+            <Experience />
+          </section>
+        )}
+
+        {page === 'contact' &&
+          (<section className="card" style={{ marginTop: '2rem' }}>
+            <h2 style={{ marginTop: 0 }}>Contact</h2>
+            <p style={{ color: 'var(--muted)' }}>
+              Reach me fastest on LinkedIn or email.
+            </p>
+          </section>)}
+      </main>
     </>
   )
 }
-
-export default App
