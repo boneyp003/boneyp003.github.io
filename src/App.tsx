@@ -3,7 +3,6 @@ import { applySeo } from "./seo";
 import { applyTheme, getInitialTheme, type Theme } from './theme'
 import Nav, { type PageId } from './components/Nav'
 import { Experience } from './components/Experience'
-import Hero from './components/Hero'
 import { Projects } from "./components/Projects"
 import ThemeToggle from './components/ThemeToggle'
 import { Home } from './components/Home';
