@@ -6,6 +6,7 @@ import { Experience } from './components/Experience'
 import Hero from './components/Hero'
 import { Projects } from "./components/Projects"
 import ThemeToggle from './components/ThemeToggle'
+import { Home } from './components/Home';
 
 export default function App() {
   const [theme, setTheme] = useState<Theme>(() => getInitialTheme())
@@ -33,8 +34,10 @@ export default function App() {
 
       <Nav active={page} onChange={setPage} />
       <main style={{ padding: '2.5rem', maxWidth: 980, margin: '0 auto' }}>
-        {page === 'home' && (
-          <section><Hero /></section>
+        {page === "home" && (
+          <section>
+            <Home onNavigate={(p) => setPage(p)} />
+          </section>
         )}
 
         {page === 'experience' && (
