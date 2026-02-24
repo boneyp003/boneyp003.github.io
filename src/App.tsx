@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react'
+import { applySeo } from "./seo";
 import { applyTheme, getInitialTheme, type Theme } from './theme'
 import Nav, { type PageId } from './components/Nav'
 import { Experience } from './components/Experience'
 import Hero from './components/Hero'
+import { Projects } from "./components/Projects"
 import ThemeToggle from './components/ThemeToggle'
 
 export default function App() {
@@ -12,11 +14,17 @@ export default function App() {
     applyTheme(theme)
   }, [theme])
 
+
+
   const toggleTheme = () => {
     setTheme((t) => (t === 'dark' ? 'light' : 'dark'))
   }
 
   const [page, setPage] = useState<PageId>('home')
+
+  useEffect(() => {
+    applySeo(page);
+  }, [page]);
 
 
   return (
@@ -32,6 +40,12 @@ export default function App() {
         {page === 'experience' && (
           <section>
             <Experience />
+          </section>
+        )}
+
+        {page === 'projects' && (
+          <section>
+            <Projects />
           </section>
         )}
 
