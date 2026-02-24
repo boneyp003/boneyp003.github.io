@@ -6,8 +6,7 @@ The site showcases my experience as a Full-Stack Software Engineer
 specializing in scalable cloud-native systems, enterprise modernization,
 and high-performance web applications.
 
-Live Site:\
-https://boneyp003.github.io/
+Live Site: https://boneyp003.github.io
 
 ------------------------------------------------------------------------
 
@@ -25,9 +24,9 @@ https://boneyp003.github.io/
 
 This site serves multiple goals:
 
--   Professional portfolio\
--   Technical credibility platform\
--   Case study hub\
+-   Professional portfolio
+-   Technical credibility platform
+-   Case study hub
 -   Long-term foundation for consulting and product initiatives
 
 The focus is on clean architecture, performance, clarity, and
@@ -37,10 +36,10 @@ simplicity.
 
 ## Features
 
--   Responsive layout\
--   Light / Dark theme toggle (system preference aware)\
--   Structured experience section with measurable impact\
--   Modular component architecture\
+-   Responsive layout
+-   Light / Dark theme toggle (system preference aware)
+-   Structured experience section with measurable impact
+-   Modular component architecture
 -   Type-safe implementation with TypeScript
 
 ------------------------------------------------------------------------
@@ -93,15 +92,15 @@ Production builds are generated using Vite and published to the
 
 Planned improvements:
 
--   Project case studies with architectural breakdowns\
--   Blog section for system design and cloud architecture topics\
--   Resume download\
--   SEO enhancements and social metadata\
+-   Project case studies with architectural breakdowns
+-   Blog section for system design and cloud architecture topics
+-   Resume download
+-   SEO enhancements and social metadata
 -   Performance optimizations and Lighthouse tuning
 
 ------------------------------------------------------------------------
 
 ## Contact
 
-GitHub: https://github.com/boneyp003\
-LinkedIn: https://www.linkedin.com/
+GitHub: https://github.com/boneyp003
+LinkedIn: [https://www.linkedin.com/](https://www.linkedin.com/in/boneyp003)
