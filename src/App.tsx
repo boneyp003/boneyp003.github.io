@@ -14,8 +14,6 @@ export default function App() {
     applyTheme(theme)
   }, [theme])
 
-
-
   const toggleTheme = () => {
     setTheme((t) => (t === 'dark' ? 'light' : 'dark'))
   }
@@ -25,7 +23,6 @@ export default function App() {
   useEffect(() => {
     applySeo(page);
   }, [page]);
-
 
   return (
     <>

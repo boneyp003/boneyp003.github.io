@@ -87,21 +87,6 @@ export function Home({ onNavigate }: Props) {
           >
             View all case studies
           </button>
-          <button
-            type="button"
-            onClick={() => onNavigate("contact")}
-            style={{
-              border: "1px solid var(--border)",
-              background: "transparent",
-              color: "var(--text)",
-              padding: "0.6rem 0.9rem",
-              borderRadius: 12,
-              cursor: "pointer",
-              fontWeight: 700,
-            }}
-          >
-            Contact
-          </button>
         </div>
       </Section>
 
