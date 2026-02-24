@@ -1,4 +1,4 @@
-import type { CaseStudy } from "../data/casestudies";
+import type { CaseStudy } from "../data/caseStudies";
 import { Tag } from "./Tag";
 
 type Props = {
