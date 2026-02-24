@@ -1,73 +1,107 @@
-# React + TypeScript + Vite
+# Boney Patel -- Personal Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the source code for my personal website.
 
-Currently, two official plugins are available:
+The site showcases my experience as a Full-Stack Software Engineer
+specializing in scalable cloud-native systems, enterprise modernization,
+and high-performance web applications.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Live Site:\
+https://boneyp003.github.io/
 
-## React Compiler
+------------------------------------------------------------------------
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+-   React
+-   TypeScript
+-   Vite
+-   Custom CSS (Light/Dark theme support)
+-   GitHub Pages (Deployment)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+------------------------------------------------------------------------
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Purpose
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+This site serves multiple goals:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+-   Professional portfolio\
+-   Technical credibility platform\
+-   Case study hub\
+-   Long-term foundation for consulting and product initiatives
+
+The focus is on clean architecture, performance, clarity, and
+simplicity.
+
+------------------------------------------------------------------------
+
+## Features
+
+-   Responsive layout\
+-   Light / Dark theme toggle (system preference aware)\
+-   Structured experience section with measurable impact\
+-   Modular component architecture\
+-   Type-safe implementation with TypeScript
+
+------------------------------------------------------------------------
+
+## Local Development
+
+Clone the repository:
+
+``` bash
+git clone https://github.com/boneyp003/boneyp003.github.io.git
+cd boneyp003.github.io
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Install dependencies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+``` bash
+npm install
 ```
+
+Run development server:
+
+``` bash
+npm run dev
+```
+
+Build for production:
+
+``` bash
+npm run build
+```
+
+Preview production build locally:
+
+``` bash
+npm run preview
+```
+
+------------------------------------------------------------------------
+
+## Deployment
+
+The site is deployed using GitHub Pages.
+
+Production builds are generated using Vite and published to the
+`gh-pages` branch.
+
+------------------------------------------------------------------------
+
+## Roadmap
+
+Planned improvements:
+
+-   Project case studies with architectural breakdowns\
+-   Blog section for system design and cloud architecture topics\
+-   Resume download\
+-   SEO enhancements and social metadata\
+-   Performance optimizations and Lighthouse tuning
+
+------------------------------------------------------------------------
+
+## Contact
+
+GitHub: https://github.com/boneyp003\
+LinkedIn: https://www.linkedin.com/
