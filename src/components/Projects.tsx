@@ -1,6 +1,6 @@
-import { caseStudies } from "../data/casestudies";
 import { CaseStudyCard } from "./CaseStudyCard";
 import { Accordion } from "./Accordion";
+import { caseStudies } from "../data/caseStudies";
 
 export function Projects() {
   const items = caseStudies.map((study) => ({
