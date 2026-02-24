@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section className={styles.hero}>
       <div className={styles.imageWrap}>
-        <img src="/hero.jpg" alt="Boney Patel" className={styles.image}/>
+        <img src="/hero.jpg" alt="Boney Patel" className={styles.image} />
       </div>
       <div className={styles.content}>
         <h1>Boney Yogeshbhai Patel</h1>
@@ -15,6 +15,7 @@ export default function Hero() {
         <div style={{ marginTop: '1.5rem', marginBottom: '1.5rem', justifyContent: 'center', display: 'flex', gap: 25, flexWrap: 'wrap' }}>
           <a href={urls.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <a href={urls.github} target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="/resume.pdf" download>Resume</a>
         </div>
       </div>
     </section>
