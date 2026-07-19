@@ -6,6 +6,10 @@ import { Experience } from './components/Experience'
 import { Projects } from "./components/Projects"
 import ThemeToggle from './components/ThemeToggle'
 import { Home } from './components/Home';
+import { Chatbot } from '@portfolio-chatbot/widget'
+import '@portfolio-chatbot/widget/style.css'
+
+const CHATBOT_API_URL = 'https://portfolio-chatbot-worker.boneyp003.workers.dev/chat'
 
 export default function App() {
   const [theme, setTheme] = useState<Theme>(() => getInitialTheme())
@@ -56,6 +60,8 @@ export default function App() {
             </p>
           </section>)}
       </main>
+
+      <Chatbot apiUrl={CHATBOT_API_URL} title="Ask about Boney" />
     </>
   )
 }
