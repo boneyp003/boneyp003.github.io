@@ -41,6 +41,18 @@ simplicity.
 -   Structured experience section with measurable impact
 -   Modular component architecture
 -   Type-safe implementation with TypeScript
+-   AI chatbot widget for visitor Q&A about my background/experience/projects
+
+------------------------------------------------------------------------
+
+## Chatbot widget
+
+The floating chat launcher is powered by a separate project,
+[portfolio-chatbot](https://github.com/boneyp003/portfolio-chatbot) (a React
+widget + Cloudflare Worker backend on Workers AI's free tier). The built
+widget files are vendored into `src/vendor/chatbot-widget/` rather than
+installed as an npm dependency — see that repo's README for how to rebuild
+and re-copy them after making changes to the widget.
 
 ------------------------------------------------------------------------
 
