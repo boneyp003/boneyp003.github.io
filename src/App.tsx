@@ -6,8 +6,8 @@ import { Experience } from './components/Experience'
 import { Projects } from "./components/Projects"
 import ThemeToggle from './components/ThemeToggle'
 import { Home } from './components/Home';
-import { Chatbot } from '@portfolio-chatbot/widget'
-import '@portfolio-chatbot/widget/style.css'
+import { Chatbot } from './vendor/chatbot-widget/portfolio-chatbot-widget.js'
+import './vendor/chatbot-widget/portfolio-chatbot-widget.css'
 
 const CHATBOT_API_URL = 'https://portfolio-chatbot-worker.boneyp003.workers.dev/chat'
 
